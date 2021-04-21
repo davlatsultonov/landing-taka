@@ -40,5 +40,17 @@ $(function () {
                 }
             })
         }
+    });
+});
+
+
+
+document.addEventListener('DOMContentLoaded', function () {
+
+    document.querySelectorAll('.feedback__icon').forEach(function (item) {
+        item.onanimationend = function () {
+            this.style.opacity = 1;
+            this.classList.remove('animate')
+        }
     })
 })
