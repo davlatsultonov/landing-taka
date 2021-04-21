@@ -34,15 +34,15 @@ ul {
 }
 
 .link-to {
-    color: #f3f2f2;
-    font-size: 14px;
+    display: block;
+    font-family: 'Manrope', sans-serif;
+    color: #faf9f8;
+    font-size: 16px;
     font-style: normal;
-    font-weight: 700;
-    line-height: 22px;
-    text-align: left;
+    line-height: 24px;
+    letter-spacing: -0.3px;
     text-decoration: underline;
     margin-top: 14px;
-    display: block;
     cursor: pointer;
     transition: opacity 200ms ease-in-out;
     will-change: opacity;
@@ -57,9 +57,19 @@ ul {
     width: 100%;
     margin: 0 auto;
     max-width: 400px;
+    min-width: 300px;
     background-image: url('../images/main-bg.png');
     background-size: cover;
     position: relative;
+}
+
+.content h4 {
+    color: #f3f2f2;
+    font-size: 12px;
+    font-weight: 500;
+    letter-spacing: 8px;
+    text-transform: uppercase;
+    margin-top: 24px;
 }
 
 .container {
@@ -224,39 +234,51 @@ ul {
 }
 
 .main-form {
+    margin-top: 80px;
     width: 100%;
     display: flex;
     flex-direction: column;
     justify-content: center;
-    padding: 24px 16px;
-    background-image: linear-gradient(to right, #ff52bd 0%, #ff425d 100%);
-    border-radius: 8px;
+    color: #f3f2f2;
 }
 
 .main-form h1 {
-    color: #f3f2f2;
+    font-size: 36px;
+    font-weight: 700;
+    letter-spacing: -0.4px;
+    line-height: 44px;
+}
+
+.main-form h2 {
     font-size: 18px;
+    font-weight: 700;
     line-height: 22px;
+}
+
+.main-form h5 {
+    width: 97%;
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 20px;
+    margin-top: 16px;
 }
 
 .form {
     width: 100%;
     max-width: 400px;
     margin-top: 20px;
+    font-family: 'Lato', sans-serif;
 }
 
 .form .input {
-    height: 40px;
+    color: #b3adad;
+    height: 56px;
     width: 100%;
-    padding: 0 16px 1px 45px;
-    border-radius: 6px;
+    padding: 0 0 1px;
     border: none;
-    background-color: #ffffff;
-    color: #af52de;
-    font-weight: 500;
-    background-image: url(../images/icons/phone-icon.svg);
-    background-position: left center;
-    background-repeat: no-repeat;
+    background-color: transparent;
+    border-bottom: 1px solid #f3f2f2;
+    border-radius: 4px;
 }
 
 .form__input-field {
@@ -264,7 +286,7 @@ ul {
 }
 
 .form .input.error {
-    border: 1px solid red;
+    border-bottom-color: red;
 }
 
 .form .input:-webkit-autofill {
@@ -278,42 +300,39 @@ ul {
 }
 
 .form input::placeholder {
-    color: #af52de;
-    font-weight: 600;
-    font-size: 14px;
+    color: #b3adad;
+    font-size: 18px;
     letter-spacing: normal;
     line-height: 24px;
     text-align: left;
 }
 
 .form input:-ms-input-placeholder {
-    color: #af52de;
-    font-weight: 600;
-    font-size: 14px;
+    color: #b3adad;
+    font-size: 18px;
     letter-spacing: normal;
     line-height: 24px;
     text-align: left;
 }
 
 .form input::-ms-input-placeholder {
-    color: #af52de;
-    font-weight: 600;
-    font-size: 14px;
+    color: #b3adad;
+    font-size: 18px;
     letter-spacing: normal;
     line-height: 24px;
     text-align: left;
 }
 
 .form .btn {
-    height: 40px;
+    height: 56px;
     margin-top: 15px;
     border: none;
     width: 100%;
     color: #fff;
-    font-size: 14px;
-    font-weight: 700;
-    background-color: #af52de;
-    border-radius: 6px;
+    font-size: 18px;
+    background-color: #d91646;
+    letter-spacing: -0.4px;
+    border-radius: 1px;
     position: relative;
     overflow: hidden;
     will-change: background-color, opacity;
@@ -396,13 +415,11 @@ ul {
 
 .footer {
     max-width: 400px;
-    margin: 0 auto 8px;
+    margin: 8px auto ;
     color: #b3adad;
     font-family: "Helvetica", sans-serif;
     font-size: 8px;
     letter-spacing: -0.2px;
-    position: absolute;
-    bottom: -3px;
 }
 
 .modal-view .form {
