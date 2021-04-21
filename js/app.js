@@ -67,7 +67,7 @@ $(function () {
 });
 
 
-
+/*
 document.addEventListener('DOMContentLoaded', function () {
 
     document.querySelectorAll('.feedback__icon').forEach(function (item) {
@@ -76,4 +76,4 @@ document.addEventListener('DOMContentLoaded', function () {
             this.classList.remove('animate')
         }
     })
-});
+});*/

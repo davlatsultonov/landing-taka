@@ -82,12 +82,7 @@ ul {
     padding-left: 15px;
     margin: 0 auto;
     min-width: 300px;
-}
-
-@media (min-width: 768px) {
-    .container {
-        max-width: 700px;
-    }
+    max-width: 480px;
 }
 
 .header {
@@ -159,25 +154,24 @@ ul {
     content: '';
     display: block;
     position: absolute;
-    bottom: -2px;
+    bottom: -1px;
     left: 0;
     right: 0;
     background-image: url("../images/icons/Line.svg");
     width: 100%;
-    height: 2px;
+    height: 1px;
 }
 
 .feedback__icon {
     display: inline-block;
-    width: 18px;
-    height: 18px;
+    width: 24px;
+    height: 24px;
     vertical-align: sub;
     background-size: 18px;
     background-position: center;
     background-repeat: no-repeat;
     transition: background-image 250ms ease-in-out;
     will-change: background-image;
-    opacity: 0;
     position: relative;
 }
 
@@ -199,7 +193,7 @@ ul {
     background-image: url("../images/icons/telegram_blue.svg");
 }
 
-.feedback__icon:after {
+/*.feedback__icon:after {
     content: "";
     background: #fff;
     height: 18px;
@@ -216,7 +210,7 @@ ul {
     animation-name: radiance-icon;
     animation-duration: 2s;
     animation-iteration-count: infinite;
-}
+}*/
 
 .animate {
     -webkit-animation-name: fadeInLeft;
@@ -226,7 +220,7 @@ ul {
 }
 
 .main-form {
-    margin-top: 80px;
+    margin-top: 55px;
     width: 100%;
     display: flex;
     flex-direction: column;
@@ -234,11 +228,24 @@ ul {
     color: #f3f2f2;
 }
 
+@media (min-width: 359px) {
+    .main-form {
+        margin-top: 80px;
+    }
+}
+
 .main-form h1 {
-    font-size: 36px;
+    font-size: 32px;
     font-weight: 700;
     letter-spacing: -0.4px;
-    line-height: 44px;
+    line-height: 40px;
+}
+
+@media (min-width: 359px) {
+    .main-form h1 {
+        font-size: 36px;
+        line-height: 44px;
+    }
 }
 
 .main-form h2 {
@@ -269,7 +276,6 @@ ul {
     border: none;
     background-color: transparent;
     border-bottom: 1px solid #f3f2f2;
-    border-radius: 4px;
 }
 
 .form__input-field {
