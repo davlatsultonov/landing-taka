@@ -32,7 +32,7 @@
             <div class="container">
                 <div class="feedback">
 
-                    <span data-src="#popup_callback" class="text feedback__item feedback__callback ">Заказать звонок</span>
+                    <span data-src="#popup_callback" class="text feedback__item feedback__callback js-feedback-toggle">Заказать звонок</span>
 
                     <a href="#" class="text feedback__item feedback__item_whatsapp">
                         <i class="feedback__icon animate"></i>
@@ -57,7 +57,7 @@
     </div>
 
     <div class="content">
-        <div class="container">
+        <div class="content__inner">
             <h4>Интернет-магазин</h4>
 
             <div class="main-form">
@@ -83,13 +83,42 @@
             </div>
         </div>
         <footer class="footer">
-            <div class="container">
-                Оставляя контактную информацию, вы соглашаетесь на обработку персональных данных
-            </div>
+            Оставляя контактную информацию, вы соглашаетесь на обработку персональных данных
         </footer>
     </div>
 
 
+</div>
+
+<div class="modal-view">
+    <div class="modal-view-content">
+        <h1>Заказать звонок</h1>
+
+        <div class="modal-view-close js-feedback-toggle">
+            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 18 18">
+                <path fill="none" stroke="#d9d7d7" stroke-linecap="round" stroke-linejoin="round"
+                      stroke-miterlimit="20" stroke-width="1.5" d="M1 1l16 16"></path>
+                <path fill="none" stroke="#d9d7d7" stroke-linecap="round" stroke-linejoin="round"
+                      stroke-miterlimit="20" stroke-width="1.5" d="M17 1L1 17"></path>
+            </svg>
+        </div>
+
+        <form class="form clear-margin center js-zayavka">
+            <input type="tel" name="phone" autocomplete="on" class="input phone-mask"
+                   placeholder="Ваш телефон">
+
+            <button class="btn">
+                Заказать звонок
+            </button>
+
+            <a href="javascript:void(0)" class="form__btn-close js-feedback-toggle">
+                Закрыть
+            </a>
+        </form>
+    </div>
+    <footer class="footer">
+        Оставляя контактную информацию, вы соглашаетесь на обработку персональных данных
+    </footer>
 </div>
 
 <script src="js/jquery-3.3.1.min.js"></script>
